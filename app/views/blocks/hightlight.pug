@@ -1,0 +1,71 @@
+.hightlight
+  .news
+    .header
+      h1.title NEWS & EVENTS
+      +link("View more").more
+    .content
+      .hightlight-item
+        img(src="images/upload/thumb-2.jpg", alt="item 1")
+        .description
+          div.header-1
+            a(href="#").title Consetetur sadipscing nonumy elitr...
+            p.date 18.12.2013
+          p.detail Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore...
+      .items
+        img(src="images/bullet.png", alt="bullet")
+        .description
+          .header-2
+            a(href="#").title Consetetur sadipscing nonumy elitr...
+            p.date 18.12.2013
+          p.detail Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore...
+      .items
+        img(src="images/bullet.png", alt="bullet")
+        .description
+          .header-2
+            a(href="#").title Consetetur sadipscing nonumy elitr...
+            p.date 18.12.2013
+          p.detail Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore...
+  .partner
+    h2.title PARTNERS
+    div.partners-slider
+        .slider-container(data-slider)
+          .slider
+            +slider-item-1({
+              type: true,
+              cls: 'partners',
+              title1: 'logo 1',
+              src1: 'images/upload/logo-1.jpg',
+              title2: 'logo 2',
+              src2: 'images/upload/logo-2.jpg',
+              title3: 'logo 3',
+              src3: 'images/upload/logo-3.jpg',
+              title4: 'logo 4',
+              src4: 'images/upload/logo-4.jpg',
+              title5: 'logo 5',
+              src5: 'images/upload/logo-5.jpg',
+              title6: 'logo 6',
+              src6: 'images/upload/logo-6.jpg'
+            })
+            +slider-item-1({
+              type: true,
+              cls: 'partners',
+              title1: 'logo 1',
+              src1: 'images/upload/logo-1.jpg',
+              title2: 'logo 2',
+              src2: 'images/upload/logo-2.jpg',
+              title3: 'logo 3',
+              src3: 'images/upload/logo-3.jpg',
+              title4: 'logo 4',
+              src4: 'images/upload/logo-4.jpg',
+              title5: 'logo 5',
+              src5: 'images/upload/logo-5.jpg',
+              title6: 'logo 6',
+              src6: 'images/upload/logo-6.jpg'
+            })
+
+          .slider-switch.slider-switch-prev(data-slider-dir="prev")
+            span.prev
+          .slider-switch.slider-switch-next(data-slider-dir="next")
+            span.next
+
+

@@ -1,0 +1,22 @@
+mixin form(obj)
+  - if (typeof(obj.name) === 'undefined') obj.name = obj.id
+  - if (typeof(obj.action) === 'undefined') obj.action = '#'
+  - if (typeof(obj.method) === 'undefined') obj.method = 'post'
+  form(id = obj.id, name = obj.name, action = obj.action, method = obj.method)&attributes(attributes)
+    block
+
+mixin input(obj)
+  - if (typeof(obj.type) === 'undefined') obj.type = 'text'
+  - if (typeof(obj.placeholder) === 'undefined') obj.placeholder = null
+  - if (typeof(obj.name) === 'undefined') obj.name = obj.id
+  input(type = obj.type, id = obj.id, name = obj.name, placeholder = obj.placeholder, required)&attributes(obj.attr||attributes)
+
+mixin button(obj)
+  - if (typeof(obj.type) === 'undefined') obj.type = 'submit'
+  - if (typeof(obj.title) === 'undefined') obj.title = obj.text
+  - if (typeof(obj.name) === 'undefined') obj.name = obj.id
+  button(type = obj.type, name = obj.name, id = obj.id, title = obj.title)&attributes(attributes)
+    if block
+      block
+    else
+      !=obj.text

@@ -1,0 +1,62 @@
+footer.footer
+  .footer-top
+    .block-1
+      p.title CONTACT US
+      .block-detail
+        p Address:
+        p 72/4 Truong Quoc Dung Street, Ward 10, Phu Nhuan District, Ho Chi Minh City, Vietnam
+      .block-detail
+        p Tel:
+        p +84 8 3997 5901
+      .block-detail
+        p Fax:
+        p +84 8 3997 5900
+      .block-detail
+        p Email:
+        p contact-us@sutrixmedia.com
+    .block-1
+      p.title QUICK LINKS
+      ul.block-detail
+        li
+          a(href="#", title="Contact-us") Contact-us
+        li
+          a(href="#", title="Lasted News") Lasted News
+        li
+          a(href="#", title="FAQs") FAQs
+        li
+          a(href="#", title="Terms & Conditions") Terms & Conditions
+        li
+          a(href="#", title="Private Policy") Private Policy
+    .block-1
+      p.block-news-letter NEWSLETTER
+      +form({
+        id: 'newsletter-form',
+        action: '#',
+        method: 'post'
+      })
+        +input({
+          id: 'newsletter-input',
+          placeholder: 'Enter Email...'
+        }).newsletter-input
+        +input({
+          id: 'newsletter-btn',
+          type: 'submit',
+          text: 'Search'
+        }).newsletter-btn
+  .footer-bottom
+    ul
+      li
+        a(href="#", title="Homepage").menu Homepage
+      li
+        a(href="#", title="About").menu About us
+      li
+        a(href="#", title="Services").menu Services
+      li
+        a(href="#", title="News & Events").menu News & Events
+      li
+        a(href="#", title="Gallery").menu Gallery
+      li
+        a(href="#", title="Contact us").menu Contact us
+      li
+        a(href="#", title="FAQs").menu FAQs
+    p.copy Copyright &copy; 2014 Template Demo All Rights Reserved.
